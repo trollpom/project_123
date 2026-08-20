@@ -17,10 +17,11 @@
     <nav class="nav">
       <a href="#advantages">Преимущества</a>
       <a href="#technology">Технология</a>
-      <a href="#market">Рынок ИХЛА</a>
+      <a href="#market">Рынок</a>
       <a href="#compare">Сравнение</a>
-      <a href="#specs">Характеристики</a>
-      <a href="#reagents">Реагенты НПО</a>
+      <a href="#specs">ТХ</a>
+      <a href="#reagents">Реагенты</a>
+      <a href="#roadmap">Дорожная карта</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <div class="nav-cta">
@@ -423,6 +424,58 @@
   </div>
 </section>
 
+<section id="roadmap" class="section" style="background:#F8FAFC;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="kicker">Дорожная карта • Из презентации НПО • 2026</div>
+    <h2>5 наборов сегодня — самые дорогие аналиты завтра</h2>
+    <p class="lead">Честно из вашей презентации: на 2026 г. у KleeYa зарегистрировано <b>5</b> наборов против 209 у Snibe и 134 у Roche. Это узкое место сейчас — и огромный потенциал роста. Следующая волна закрывает самые маржинальные тесты.</p>
+    <div class="grid" style="grid-template-columns:.9fr 1.1fr;gap:20px;margin-top:20px">
+      <div class="card card-pad">
+        <div style="display:flex;justify-content:space-between;align-items:start;gap:12px">
+          <h3>Желаемая следующая волна регистрации</h3>
+          <span class="badge" style="background:var(--navy);color:#fff">17 дорогих аналитов</span>
+        </div>
+        <p class="muted" style="font-size:12px;margin:6px 0 0">Самые популярные и дорогие в ИХЛА — каждый закрывает высокомаржинальный поток.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:14px;font-size:13px">
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Кальцитонин</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Тропонин</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• NT-proBNP</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• SS-A/SS-B</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• T4</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• T3</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Пролактин</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Тестостерон</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• ПСА</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• CA 19-9</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Витамин D</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• АМГ</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Прокальцитонин</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Anti-TG</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• ХГЧ</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• Прогестерон</span>
+          <span style="background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px">• АФП</span>
+        </div>
+        <div class="card" style="margin-top:14px;padding:12px;background:#FFF3E0;border:1px solid #FFCC80">
+          <b style="font-size:12px;color:#E65100">Вывод презентации НПО:</b>
+          <p class="muted" style="font-size:12px;margin:4px 0 0">«На текущий момент недостаточно широкая зарегистрированная линейка наборов» — но именно эти 17 аналитов дают 40–50% выручки частной лаборатории. KleeYa закрывает их следующей волной.</p>
+        </div>
+      </div>
+      <div class="card chart-card">
+        <h3>Зарегистрированных наборов на 2026 г.</h3>
+        <p class="muted" style="font-size:11px;margin:4px 0 0">Источник: Презентация ИХЛА НПО, слайд «Зарегистрированных наборов на 2026г.»</p>
+        <canvas id="kitsChart" height="240"></canvas>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;font-size:11px">
+          <div style="background:#F8FAFC;border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center"><b style="color:var(--navy)">5</b><br><span class="muted">KleeYa<br><span style="color:#C62828">старт</span></span></div>
+          <div style="background:#FFF;border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center"><b>209</b><br><span class="muted">Snibe Maglumi<br>лидер</span></div>
+          <div style="background:#FFF;border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center"><b>134</b><br><span class="muted">Roche</span></div>
+        </div>
+        <p class="muted" style="font-size:11px;margin-top:10px">Mindray — 105, Abbott — 56, Лидлаб Амур — 79. При открытой платформе KleeYa наборы добавляются без смены прибора — 1 регистрация = 1 новый доходный тест.</p>
+        <a href="#cta" class="btn btn-primary" style="width:100%;margin-top:12px">Забронировать тесты из следующей волны →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="kicker">Экономика клиники • ROI</div>
@@ -528,6 +581,21 @@ if(ctxR){
      responsive:true,
      plugins:{legend:{display:false}},
      scales:{y:{title:{display:true,text:'млрд ₽'}, grid:{color:'#EEF2F7'}},x:{ grid:{display:false}, ticks:{maxRotation:0, autoSkip:false, font:{size:10}}}}
+   }
+ });
+}
+const ctxK = document.getElementById('kitsChart');
+if(ctxK){
+ new Chart(ctxK, {
+   type:'bar',
+   data:{
+     labels:['KleeYa','Mindray','Snibe Maglumi','Abbott','Roche','Лидлаб Амур'],
+     datasets:[{data:[5,105,209,56,134,79], backgroundColor:['#0B1D3A','#C62828','#7CB342','#6A1B9A','#00838F','#EF6C00'], borderRadius:8, barThickness:32}]
+   },
+   options:{
+     responsive:true,
+     plugins:{legend:{display:false}},
+     scales:{y:{title:{display:true,text:'наборов'}, max:250, grid:{color:'#EEF2F7'}},x:{grid:{display:false}, ticks:{font:{size:11}}}}
    }
  });
 }
